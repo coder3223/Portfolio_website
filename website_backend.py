@@ -22,9 +22,8 @@ class ContactForm(FlaskForm):
 
 
 MY_EMAIL = os.environ.get("SITE_EMAIL")
-print(MY_EMAIL)
 PASSWORD = os.environ.get("EMAIL_PASSWORD")
-print(PASSWORD)
+
 
 app = Flask(__name__)
 app.secret_key = "ThisIsGold"
