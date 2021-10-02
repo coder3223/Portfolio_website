@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact</title>
+<<<<<<< HEAD
+<<<<<<< HEAD
+    <link rel="stylesheet" href="static/styles.css">
+  </head>
+  <body>
+    {% include "header.html" %}
+      <div class="get_email">
+        <form action="mailto:coder3223@gmail.com" method="POST" enctype="text/plain">
+          <label for="">Name:</label>
+          <input type="text" name="YourName" id=""><br>
+          <label for="">Email:</label>
+          <input type="email" name="YourEmail" id=""><br>
+          <label for="">Message:</label><br>
+          <textarea name="YourMessage" id="" cols="40" rows="20" placeholder="Enter message here"></textarea><br>
+          <input type="submit">
+        </form>
+      </div>
+    {% include "footer.html" %}
+=======
+    <link rel="stylesheet" href="static/styles.css" />
+    {% include "header.html" %}
+    <div class="page_heading">
+      {% if msg_sent: %}
+      <h1>Successfully sent your message</h1>
+      {% else: %}
+      <h1>Contact Me</h1>
+      {% endif %}
+    </div>
+  </head>
+  <body>
+=======
+    <link rel="stylesheet" href="static/styles.css" />
+    {% include "header.html" %}
+    <div class="page_heading">
+      {% if msg_sent: %}
+      <h1>Successfully sent your message</h1>
+      {% else: %}
+      <h1>Contact Me</h1>
+      {% endif %}
+    </div>
+  </head>
+  <body>
+>>>>>>> a4ffd101371c286dc6a7ee35a7cb997e289a3e0d
+    <h2 class="form_header">Reach me by email using the form below</h2>
+    <div class="get_email">
+      <form
+        class="ContactForm"
+        action="{{ url_for('contact')}}"
+        method="POST"
+        novalidate
+      >
+        {{ form.csrf_token }}
+        <p>
+          {{ form.name.label }} <br />
+          {{ form.name(size=30) }}
+          <span style="color: red">{{ err }}</span>
+        </p>
+        <p>
+          {{ form.email.label }} <br />
+          {{ form.email(size=30) }} {% for err in form.email.errors %}
+          <span style="color: red">{{ err }}</span>
+          {% endfor %}
+        </p>
+        <p>
+          {{ form.message.label}} <br />
+          {{ form.message(size=30) }} {% for err in form.message.errors %}
+          <span style="color: red">{{ err }}</span>
+          {% endfor %}
+        </p>
+        {{ form.submit }}
+      </form>
+    </div>
+    <!-- {% include "footer.html" %} -->
+<<<<<<< HEAD
+>>>>>>> a4ffd10... login and email validators now working
+=======
+>>>>>>> a4ffd101371c286dc6a7ee35a7cb997e289a3e0d
+  </body>
+</html>

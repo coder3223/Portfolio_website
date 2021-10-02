@@ -1,0 +1,109 @@
+body {
+  margin: auto 0;
+}
+
+/* NAV */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.main-nav {
+  display: flex;
+  list-style: none;
+  font-size: 1em;
+  text-decoration: whitesmoke;
+  margin: 0;
+  background-color: black;
+  height: 10vh;
+}
+
+.options {
+  padding: 30px;
+}
+
+.push {
+  margin-left: auto;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+/* Banner */
+.banner {
+  background-color: #4444;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 70vh;
+}
+
+.banner-image {
+  width: 30rem;
+}
+
+/*Project Grid*/
+.grid-wrapper {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+}
+
+.box-zone > img {
+  width: 100%;
+}
+
+.box-zone {
+  background-color: #4444;
+  padding: 150px;
+  margin: 20px;
+}
+
+/*Footer*/
+.footer {
+  text-align: center;
+  background-color: #4444;
+  height: 200px;
+}
+
+.get_email {
+<<<<<<< HEAD
+<<<<<<< HEAD
+    padding: 100px;
+=======
+  padding-bottom: 50px;
+>>>>>>> a4ffd10... login and email validators now working
+=======
+  padding-bottom: 50px;
+>>>>>>> a4ffd101371c286dc6a7ee35a7cb997e289a3e0d
+}
+
+/*Content*/
+.content {
+<<<<<<< HEAD
+<<<<<<< HEAD
+    padding: 100px;
+}
+=======
+=======
+>>>>>>> a4ffd101371c286dc6a7ee35a7cb997e289a3e0d
+  padding: 100px;
+}
+
+/*Email Form*/
+
+.page_heading {
+  padding: 75px;
+}
+
+/*Login Form*/
+.login_form {
+  padding: 100px;
+}
+<<<<<<< HEAD
+>>>>>>> a4ffd10... login and email validators now working
+=======
+>>>>>>> a4ffd101371c286dc6a7ee35a7cb997e289a3e0d
