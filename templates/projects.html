@@ -1,6 +1,3 @@
-<!DOCTYPE html>
-{% include "boiler_plate.html" %}
-  <body>
-    {% include "header.html"%} {% include "footer.html"%}
-  </body>
-</html>
+{% extends "base.html" %} 
+{% block title %}Projects{% endblock title %} 
+{% block content %} {% include "project_grid.html" %} {% endblock content %}

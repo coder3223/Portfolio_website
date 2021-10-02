@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{% block title %} {% endblock %}</title>
+    <link rel="stylesheet" type="text/css" href="static/styles.css" />
+  </head>
+  <body>
+    <nav class="Header sticky">
+        <ul class="main-nav">
+          <li class="options"><a href="{{ url_for('home') }}">Home</a></li>
+          <li class="options"><a href="{{ url_for('resume') }}">Resume</a></li>
+          <li class="options"><a href="{{ url_for('projects') }}">Projects</a></li>
+          <li class="options"><a href="{{ url_for('blog') }}">Blog</a></li>
+          <li class="push options"><a href="{{ url_for('login') }}">Login</a></li>
+          <li class="options"><a href="{{ url_for('contact') }}">Contact</a></li>
+        </ul>
+      </nav>
+      {% block content %} {% endblock %}
+      <footer class="footer">Footer</footer>
+  </body>

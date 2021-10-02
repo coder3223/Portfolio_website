@@ -38,7 +38,7 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 70vh;
+  height: 100vh;
 }
 
 .banner-image {
@@ -50,6 +50,7 @@ a {
   display: grid;
   grid-gap: 10px;
   grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+  padding-top: 100px;
 }
 
 .box-zone > img {
@@ -69,41 +70,18 @@ a {
   height: 200px;
 }
 
-.get_email {
-<<<<<<< HEAD
-<<<<<<< HEAD
-    padding: 100px;
-=======
-  padding-bottom: 50px;
->>>>>>> a4ffd10... login and email validators now working
-=======
-  padding-bottom: 50px;
->>>>>>> a4ffd101371c286dc6a7ee35a7cb997e289a3e0d
-}
-
 /*Content*/
 .content {
-<<<<<<< HEAD
-<<<<<<< HEAD
-    padding: 100px;
-}
-=======
-=======
->>>>>>> a4ffd101371c286dc6a7ee35a7cb997e289a3e0d
   padding: 100px;
 }
 
 /*Email Form*/
 
 .page_heading {
-  padding: 75px;
+  padding-top: 75px;
 }
 
 /*Login Form*/
 .login_form {
   padding: 100px;
 }
-<<<<<<< HEAD
->>>>>>> a4ffd10... login and email validators now working
-=======
->>>>>>> a4ffd101371c286dc6a7ee35a7cb997e289a3e0d
