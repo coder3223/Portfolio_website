@@ -1,7 +1,9 @@
 {% extends "base.html" %}
 
 {% block title%}Home{% endblock title %}
-{% block content%} {% include "hero.html" %} {% include "project_grid.html" %} 
-{% include "resume.html" %}
+{% block content%} 
+{% include "hero.html" %} 
+{% include "divider.html" %} 
+{% include "project_grid.html" %} 
+{% include "divider.html" %} 
 {% endblock content %}
-

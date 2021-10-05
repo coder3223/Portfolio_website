@@ -1,58 +1,76 @@
-<div class="content" id="content">
-  <h2>Offical Eduction</h2>
-  <ul>
-    <li>Certified Cisco Network Associate (CCNA) - Cisco</li>
-    <li>Computer Systems Information One year - Fanshawe College</li>
-    <li>General Arts and Science Diploma - Fanshawe College</li>
-  </ul>
-  <h2>Skills</h2>
+{% extends "base.html" %} {% block title %}Resume{% endblock title %} {% block
+content %}
+<div class="resume-wrapper" id="resume-wrapper">
+  <div class="official-ed" id="official-ed">
+    <h2>Official Eduction</h2>
+    <ul>
+      <li>Certified Cisco Network Associate (CCNA) - Cisco</li>
+      <li>Computer Systems Information One year - Fanshawe College</li>
+      <li>General Arts and Science Diploma - Fanshawe College</li>
+    </ul>
+  </div>
+
+  <!-- <h2>Skills</h2>
   <ul>
     <li>Python</li>
     <li>Linux</li>
-  </ul>
-  <h2>Self-Taught Eduction Courses Completed</h2>
-  <h3>Cyber Security Courses</h3>
-  <ul>
-    <li>
-      The Complete Cyber Security Course: Hackers Exposed! by Nathan House
-    </li>
-    <li>
-      The Complete Cyber Security Course: Network Security! by Nathan House
-    </li>
-    <li>Hands-on Penetration Testing Labs 1.0 by Jesse Kurrus</li>
-    <li>Start Using Wireshark to Hack like a Pro by Kevin Cardwell</li>
-    <li>
-      Introduction to Malware Analysis for Incident Responders by Jason Dion
-    </li>
-  </ul>
-  <h3>Programming Courses</h3>
-  <ul>
-    <li>
-      100 Days of Code - The Complete Python Pro Bootcamp for 2021 by Dr. Angela
-      Yu
-    </li>
-  </ul>
-  <h3>Networking Courses</h3>
-  <ul>
-    <li>
-      Cisco CCNA 200-301 - The Complete Guide to Getting Certified by Neil
-      Anderson
-    </li>
-  </ul>
-  <h3>Skills Development Courses</h3>
-  <ul>
-    <li>
-      Learning to Learn [Efficient Learning]: Zero to Mastery by Andrei Neagoie
-    </li>
-  </ul>
-  <h2>Hobbies</h2>
-  <ul>
-    <li>
-      4th degree black belt in the Advance Martial Art of<a class="kenjute-link"
-        href="https://www.kenjuteinternational.com"
-      >
-        Kenjute</a
-      >
-    </li>
-  </ul>
+  </ul> -->
+  <div class="self-taught-cyber" id="self-taught-cyber">
+    <h2>Self-Taught Eduction Courses Completed</h2>
+    <h3>Cyber Security Courses</h3>
+    <ul>
+      <li>
+        The Complete Cyber Security Course: Hackers Exposed! by Nathan House
+      </li>
+      <li>
+        The Complete Cyber Security Course: Network Security! by Nathan House
+      </li>
+      <li>Hands-on Penetration Testing Labs 1.0 by Jesse Kurrus</li>
+      <li>Start Using Wireshark to Hack like a Pro by Kevin Cardwell</li>
+      <li>
+        Introduction to Malware Analysis for Incident Responders by Jason Dion
+      </li>
+    </ul>
+  </div>
+  <div class="self-taught-pro" id="self-taught-pro">
+    <h3>Programming Courses</h3>
+    <ul>
+      <li>
+        100 Days of Code - The Complete Python Pro Bootcamp for 2021 by Dr.
+        Angela Yu
+      </li>
+    </ul>
+  </div>
+  <div class="self-taught-network" id="self-taught-network">
+    <h3>Networking Courses</h3>
+    <ul>
+      <li>
+        Cisco CCNA 200-301 - The Complete Guide to Getting Certified by Neil
+        Anderson
+      </li>
+    </ul>
+  </div>
+  <div class="self-taught-skills" id="self-taught-skills">
+    <h3>Skills Development Courses</h3>
+    <ul>
+      <li>
+        Learning to Learn [Efficient Learning]: Zero to Mastery by Andrei
+        Neagoie
+      </li>
+    </ul>
+  </div>
+  <div class="hobbies" id="hobbies">
+    <h2>Hobbies</h2>
+    <ul>
+      <li>
+        4th degree black belt in the Advance Martial Art of<a
+          class="kenjute-link"
+          href="https://www.kenjuteinternational.com"
+        >
+          Kenjute</a
+        >
+      </li>
+    </ul>
+  </div>
 </div>
+{% endblock %}
